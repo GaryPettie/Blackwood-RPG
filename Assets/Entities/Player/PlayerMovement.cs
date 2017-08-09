@@ -35,7 +35,7 @@ public class PlayerMovement : MonoBehaviour {
 					return;
 			}
 		}
-		Vector3 playerToClickPoint = currentClickTarget - transform.position ;
+		Vector3 playerToClickPoint = currentClickTarget - transform.position;
 		if(playerToClickPoint.magnitude >= moveStopRadius) {
 			m_Character.Move(playerToClickPoint, false, false);
 		}
