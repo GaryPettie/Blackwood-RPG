@@ -322,9 +322,9 @@ GameObject:
   - component: {fileID: 95275072565991518}
   - component: {fileID: 54037420875329652}
   - component: {fileID: 136450469903130866}
-  - component: {fileID: 114242507924662956}
   - component: {fileID: 114816196666125660}
   - component: {fileID: 114594700189654702}
+  - component: {fileID: 114774117806920436}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -2486,17 +2486,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114242507924662956
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1178763072906810}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 521b611700410be45810047f0a74e899, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114594700189654702
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2509,6 +2498,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveStopRadius: 0.2
+  attackStopRadius: 5
+--- !u!114 &114774117806920436
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1178763072906810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a915fd0cf76654b97dd0768ac8452d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
 --- !u!114 &114816196666125660
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2525,7 +2527,7 @@ MonoBehaviour:
   m_JumpPower: 6
   m_GravityMultiplier: 2
   m_RunCycleLegOffset: 0.2
-  m_MoveSpeedMultiplier: 2
+  m_MoveSpeedMultiplier: 1.5
   m_AnimSpeedMultiplier: 1.2
   m_GroundCheckDistance: 0.3
 --- !u!136 &136450469903130866
