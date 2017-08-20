@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.Characters.ThirdPerson;
 
-public class Enemy : MonoBehaviour {
+public class Enemy : MonoBehaviour, IDamageable {
 
 	[SerializeField] float maxHealth = 100;
 	float currentHealth = 100;
@@ -32,4 +32,7 @@ public class Enemy : MonoBehaviour {
 		}
 	}
 
+	public void TakeDamage(float damage) {
+		currentHealth = Mathf.Clamp(currentHealth - damage, 0, maxHealth);
+	}
 }
